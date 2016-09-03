@@ -1,0 +1,44 @@
+{
+  "name": "Intercom - Out of Office",
+  "description": "An autoresponder for Intercom utilises webhooks",
+  "repository": "https://github.com/thewheat/intercom-out-of-office",
+  "keywords": ["intercom", "webhook", "office", "hour", "autoresponder"],
+  "env": {
+    "APP_ID": {
+      "required": true,
+      "description": "your app ID (or personal token)"
+    },
+    "API_KEY": {
+      "required": true,
+      "description": "your API key (blank if using a personal token)"
+    },
+    "bot_admin_id": {
+      "required": true,
+      "description": "admin to send out the auto response"
+    },
+    "timezone": {
+      "required": false,
+      "description": "your timezone e.g. US/Pacific. Currently uses [ActiveSupport timezones](http://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html)"
+    },
+    "message": {
+      "required": false,
+      "description": "the message to display to the user"
+    },
+    "days_of_work": {
+      "required": false,
+      "description": "a string of 1 and 0s to indicate the days that you work. Starts from Sunday. Default value: `0111110`"
+    },
+    "time_start": {
+      "required": false,
+      "description": "a 24 hour representation of the start of your work day. Default value: `900`"
+    },
+    "time_stop": {
+      "required": false,
+      "description": "a 24 hour representation of the end of your work day. Default value: `1700`"
+    },
+    "secret": {
+      "required": false,
+      "description": "used for calculating hashes for a signed request"
+    }
+  }
+}
