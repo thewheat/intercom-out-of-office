@@ -9,6 +9,12 @@
    - a timezone of UTC
    - with office hours 0900-1700 Mon-Fri
 
+
+ ## Example
+
+ ![](/docs/autoresponder.png)
+
+
 ## Setup
 - [Add a new admin/teammate](https://docs.intercom.io/help-and-faqs/your-team-inbox/how-do-i-add-or-delete-a-teammate) in Intercom for auto responder to come from. You should make it clear to the user that this is a bot
 - Ensure that this teammate has a **Conversation Preference** of "Keep it unassigned or assigned to the team" to ensure conversation does not get assigned to this bot
